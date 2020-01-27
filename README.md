@@ -37,27 +37,13 @@ yarn
 
 yarn start
 ```
-## Deployment
+## GitHub Actions
 
-Should end up here: [Boilerplate](https://s3-cx-boilerplate-react-github-actions.s3-eu-west-1.amazonaws.com/index.html)
+This repo contains a single Github Actions file which will build, create and push a Docker image to Docker Hub.
 
-## Docker Image
+For the deployment to work the following secrets must be created:
 
-To build the image run this
-```
-docker build . --tag cx-boilerplate-react:latest
-```
-To push the image to Docker Hub run this:
-```
-docker tag cx-boilerplate-react:latest  peterbb148/cx-boilerplate-react:latest
-docker push peterbb148/cx-boilerplate-react:latest
-```
-To launch a container based on the image run this:
-```
-docker run --rm -d -p 80:80 cx-boilerplate-react
-```
-Pushing to Amazon ECR
-```
-docker tag cx-boilerplate-react:latest 295277847209.dkr.ecr.eu-west-1.amazonaws.com/cx-boilerplate-react:latest
-docker push 295277847209.dkr.ecr.eu-west-1.amazonaws.com/cx-boilerplate-react:latest
-```
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+* DOCKER_USERNAME
+* DOCKER_PASSWORD
