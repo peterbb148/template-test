@@ -1,0 +1,23 @@
+
+@import './reset.scss';
+@import './variables';
+
+body {
+  background: linear-gradient(135deg, $deep-teal, $macaroni-and-cheese 250%) ;
+  font-family: $font-family;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: $dark;
+
+  &:visited, &:active {
+    color: $steel;
+  }
+
+  &:hover {
+    color: $charcoal-grey;
+  }
+}
