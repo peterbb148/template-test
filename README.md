@@ -15,12 +15,11 @@ The following are the main libraries that compose this stack:
 
 ## Pre-requisites
 
-The usage of this boilerplate assumes that you have [node](https://nodejs.org) already installed on your personnal computer
+The usage of this boilerplate assumes that you have [node](https://nodejs.org) already installed.
 
 ## Usage
 
-This repo was configured using [yarn](https://yarnpkg.com), so you should use it to avoid conflicts.
-Install it globally using 
+This repo was configured using [yarn](https://yarnpkg.com), so you should use it to avoid conflicts. Install it globally using:
 
 ```
 npm install yarn -g
