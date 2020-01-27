@@ -1,4 +1,4 @@
-# Carlsberg Digital React Boilerplate
+# Carlsberg Digital React Template
 
 To use this repo create a template in order to bootstrap new react applications development.
 
